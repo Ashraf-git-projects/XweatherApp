@@ -1,0 +1,70 @@
+.App {
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.app_content {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  padding-top: 20px;
+  font-size: larger;
+  font-weight: 600;
+  text-align: center;
+}
+
+.search_elements {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search_btn {
+  padding: 10px 15px;
+  background-color: rgb(70, 204, 70);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.weather-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center;
+}
+
+.weather-card {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 150px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 📱 Mobile responsive */
+@media (max-width: 600px) {
+  .weather-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-card {
+    width: 80%;
+  }
+}
